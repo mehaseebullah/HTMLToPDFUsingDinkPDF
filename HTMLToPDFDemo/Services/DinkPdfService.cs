@@ -3,11 +3,11 @@ using DinkToPdf.Contracts;
 
 namespace HTMLToPDFDemo.Services
 {
-    public class PdfService
+    public class DinkPdfService
     {
         private readonly IConverter _converter;
 
-        public PdfService()
+        public DinkPdfService()
         {
             _converter = new SynchronizedConverter(new PdfTools());
         }

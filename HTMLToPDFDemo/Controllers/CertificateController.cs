@@ -7,11 +7,11 @@ namespace HTMLToPDFDemo.Controllers
     [ApiController]
     public class CertificateController : ControllerBase
     {
-        private readonly PdfService _pdfService;
+        private readonly DinkPdfService _pdfService;
 
         public CertificateController()
         {
-            _pdfService = new PdfService(); // You could inject this via DI
+            _pdfService = new DinkPdfService(); // You could inject this via DI
         }
 
         [HttpGet("generate")]
